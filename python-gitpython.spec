@@ -11,6 +11,7 @@ License:	BSD
 Group: 		Development/Python
 Url: 		http://gitorious.org/projects/git-python/
 Source0: 	http://pypi.python.org/packages/source/G/GitPython/GitPython-%{version}.tar.gz
+BuildRequires:  python-distribute
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
