@@ -2,7 +2,7 @@
 %define name    python-gitpython
 %define version 0.3.1
 %define beta    beta2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 		%{name}
 Version: 	%{version}
@@ -13,6 +13,7 @@ Group: 		Development/Python
 Url: 		http://gitorious.org/projects/git-python/
 Source0: 	http://pypi.python.org/packages/source/G/GitPython/GitPython-%{version}-%{beta}.tar.gz
 BuildRequires:  python-distribute
+BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
