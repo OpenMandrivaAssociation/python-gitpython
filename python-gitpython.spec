@@ -1,12 +1,9 @@
 %define upstream_name GitPython
-%define name    python-gitpython
-%define version 0.3.1
 %define beta    beta2
-%define release %mkrel 2
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		python-gitpython
+Version: 	0.3.1
+Release: 	3
 Summary: 	Python Git library
 License:	BSD
 Group: 		Development/Python
@@ -14,7 +11,6 @@ Url: 		http://gitorious.org/projects/git-python/
 Source0: 	http://pypi.python.org/packages/source/G/GitPython/GitPython-%{version}-%{beta}.tar.gz
 BuildRequires:  python-distribute
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 GitPython is a python library used to interact with Git repositories.
@@ -33,14 +29,10 @@ and Chris Wanstrath
 python setup.py build
 
 %install
-rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %doc AUTHORS CHANGES README.rst LICENSE TODO VERSION
 %{python_sitelib}/git
-%{python_sitelib}/GitPython-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/GitPython-%{version}-py%{py_ver}.egg-info
