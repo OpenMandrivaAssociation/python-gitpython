@@ -3,7 +3,7 @@
 
 Name: 		python-gitpython
 Version: 	0.3.1
-Release: 	3
+Release: 	4
 Summary: 	Python Git library
 License:	BSD
 Group: 		Development/Python
