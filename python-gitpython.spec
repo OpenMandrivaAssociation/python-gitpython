@@ -7,7 +7,7 @@ Summary: 	Python Git library
 License:	BSD
 Group: 		Development/Python
 Url: 		https://github.com/gitpython-developers/GitPython
-Source0: 	https://github.com/gitpython-developers/GitPython/archive/%{version}/%{name}-%{version}.tar.gz
+Source0: 	https://github.com/gitpython-developers/GitPython/archive/%{version}/%{upstream_name}-%{version}.tar.gz
 BuildRequires:  python-distribute
 BuildArch:      noarch
 
@@ -22,7 +22,7 @@ GitPython is a port of the grit library in Ruby created by Tom Preston-Werner
 and Chris Wanstrath
 
 %prep
-%setup -q
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 python setup.py build
