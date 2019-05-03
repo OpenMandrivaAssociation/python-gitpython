@@ -32,6 +32,6 @@ python setup.py install --root=%{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS CHANGES README.rst LICENSE TODO VERSION
+%doc AUTHORS CHANGES README.md LICENSE VERSION
 %{python_sitelib}/git
 %{python_sitelib}/GitPython-%{version}-py%{py_ver}.egg-info
