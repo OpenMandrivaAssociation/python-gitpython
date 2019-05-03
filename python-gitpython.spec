@@ -1,14 +1,13 @@
 %define upstream_name GitPython
-%define beta    beta2
 
 Name: 		python-gitpython
-Version: 	0.3.1
-Release: 	4
+Version: 	2.1.11
+Release: 	1
 Summary: 	Python Git library
 License:	BSD
 Group: 		Development/Python
-Url: 		http://gitorious.org/projects/git-python/
-Source0: 	http://pypi.python.org/packages/source/G/GitPython/GitPython-%{version}-%{beta}.tar.gz
+Url: 		https://github.com/gitpython-developers/GitPython
+Source0: 	https://github.com/gitpython-developers/GitPython/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  python-distribute
 BuildArch:      noarch
 
@@ -23,7 +22,7 @@ GitPython is a port of the grit library in Ruby created by Tom Preston-Werner
 and Chris Wanstrath
 
 %prep
-%setup -q -n git-python-mainline
+%setup -q
 
 %build
 python setup.py build
