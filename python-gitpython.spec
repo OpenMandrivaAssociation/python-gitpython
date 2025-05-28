@@ -1,7 +1,7 @@
 %define upstream_name GitPython
 
 Name: 		python-gitpython
-Version: 	3.1.43
+Version: 	3.1.44
 Release: 	1
 Summary: 	Python Git library
 License:	BSD
