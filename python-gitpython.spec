@@ -1,7 +1,7 @@
 %define module gitpython
 
 Name:		python-gitpython
-Version:	3.1.46
+Version:	3.1.47
 Release:	1
 Summary:	GitPython is a python library used to interact with Git repositories
 License:	BSD
