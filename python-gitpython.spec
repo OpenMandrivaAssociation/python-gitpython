@@ -2,7 +2,7 @@
 
 Name:		python-gitpython
 Version:	3.1.57
-Release:	1
+Release:	2
 Summary:	GitPython is a python library used to interact with Git repositories
 License:	BSD
 Group:		Development/Python
